@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-X</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVBAR DROPDOWN LIST -->
+      <div class="dropdown-list">
+        <a href="#heroSection">Home</a>
+        <a href="#" onclick="openCatagorySection()">Catagories</a>
+        <a href="#productSection">Products</a>
+        <a href="#footer">Contact</a>
+        <a onclick="backUp()" href="#">X</a>
+      </div>
+
+      <!-- HERO SECTION -->
+      <section id="heroSection" class="hero-section">
+        <nav class="navabar">
+          <div class="logo">
+            <h1>X</h1>
+            <h2>- TECH</h2>
+          </div>
+          <div class="dropdown-icon">
+            <i onclick="dropdown()" class="fa-solid fa-angles-down"></i>
+          </div>
+          <div class="page-links">
+            <a href="#heroSection">Home</a>
+            <a href="#" onclick="openCatagorySection()">Catagories</a>
+            <a href="#productSection">Products</a>
+            <a href="#footer">Contact</a>
+          </div>
+          <div class="accounts">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+          </div>
+        </nav>
+        <div class="hero-content">
+          <div class="text-content">
+            <h1>Upgrade Your Tech <span>Experience</span> Today</h1>
+            <p>
+              discover cutting-edge VR accessories to elevate your gaming
+              experience immerse yourself in the future of virtual reality.
+            </p>
+            <div class="buttons-div">
+              <button>LEARN MORE</button>
+              <button onclick="openCatagorySection()">EXPLORE PRODUCTS</button>
+            </div>
+          </div>
+          <div class="image-div">
+            <img src="./assets/hero section image.png" alt="VR picture" />
+          </div>
+        </div>
+      </section>
+
+      <!-- DISCOUNT SECTION -->
+      <section id="discountSection" class="Discount-section">
+        <h1>GET <span>EXCLUSIVE</span> DISCOUNT ON ALL PRODUCTS</h1>
+      </section>
+
+      <!-- PRODUCT SECTION -->
+      <section id="productSection" class="products-section">
+        <div class="heading">
+          <h1>PRODUCTS <i class="fa-solid fa-arrow-right"></i></h1>
+        </div>
+        <div class="product-lists">
+          <!-- PRODUCTS BOXES WILL BE ADDED HERE USING JS -->
+        </div>
+      </section>
+
+      <!-- CATAGORY PAGE -->
+
+      <div class="Catagory-section display-none">
+        <div class="home-button-div">
+          <button onclick="backToHome()" style="cursor: pointer">
+            <- BACK TO HOME
+          </button>
+        </div>
+        <div class="catagories">
+          <h1>CATAGORIES</h1>
+          <div class="catagory-tabs">
+            <a href="#" onclick="ShowAll()">Show All</a>
+            <a href="#" onclick="ComAcc()">Computer Accessories</a>
+            <a href="#" onclick="lifAcc()">life Accessories</a>
+            <a href="#" onclick="music()">Music</a>
+          </div>
+        </div>
+        <div class="catagories-products">
+          <!-- CATAGORY PRODUCTS WILL BE ADDED HERE WITH JS  -->
+        </div>
+      </div>
+
+      <!-- FOOTER SECTION -->
+      <footer id="footer" class="footer-section">
+        <div class="headings">
+          <h2>CopyRight X-Tech</h2>
+          <h3>Email us : Tech123@gmail.com</h3>
+          <h3>Contact us : 021-123-123</h3>
+        </div>
+        <div class="social-media">
+          <h2 class="facebook">F</h2>
+          <h2 class="instagram">I</h2>
+          <h2 class="twitter">X</h2>
+          <h2 class="youtube">YT</h2>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
