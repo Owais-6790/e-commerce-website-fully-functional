@@ -385,6 +385,8 @@ nav {
 
 .Catagory-section .home-button-div button {
   color: white;
+  font-weight: 900;
+  font-size: 1vw;
   border: none;
   background: linear-gradient(to right, #4a1253 0%, #18265ae0 100%);
   padding: 1vw;
@@ -404,6 +406,10 @@ nav {
   box-shadow: 0 0 30px rgba(106, 106, 106, 0.915);
 }
 
+.catagories h1 {
+  font-size: 2vw;
+}
+
 .catagories .catagory-tabs {
   display: flex;
   align-items: center;
@@ -412,6 +418,7 @@ nav {
 }
 
 .catagories .catagory-tabs a {
+  font-size: 1vw;
   color: white;
   text-decoration: none;
   transition: all 0.5s;
@@ -694,5 +701,40 @@ nav {
   }
   .footer-section .social-media .youtube {
     padding: 2vw 2.5vw;
+  }
+
+  .Catagory-section {
+    gap: 10vw;
+    padding: 5vw 20vw;
+  }
+
+  .Catagory-section .home-button-div {
+    justify-content: center;
+  }
+
+  .Catagory-section .home-button-div button {
+    font-size: 2vw;
+    padding: 3vw;
+  }
+
+  .catagories {
+    width: 80vw;
+    flex-direction: column;
+    padding: 4vw;
+    gap: 4vw;
+  }
+
+  .catagories h1 {
+    font-size: 8vw;
+  }
+
+  .catagories .catagory-tabs a {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .catagories-products {
+    margin-top: 0;
+    gap: 15vw;
   }
 }
